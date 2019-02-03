@@ -120,14 +120,26 @@ b_third = \relative c {
 
 
 g_epilogue = \relative fis {
+  cis4 fis gis a | b cis d e |
+  d, fis gis a | b cis d cis |
+  e, fis gis a | b a gis a |
+
   b, fis' gis a | b a gis fis |
   b, fis' gis a | b a gis fis |
+  b, fis' gis a | b a gis fis~ | fis1 |
+
   d'4 cis b a | b gis fis2~ | fis1 |
 }
 
 b_epilogue = \relative c {
+  a'4 fis8 gis8 a4 b4 | a4 fis8 gis8 a4 b4 |
   a4 fis8 gis8 a4 b4 | a4 fis8 gis8 a4 b4 |
-  a4 fis8 gis8 a4 b4 | a4 fis8 gis8 a4 b4 |
+  a4 fis8 gis8 a8 b8 a4 | a4 fis8 gis8 a8 b8 a4 |
+
+  a4 fis8 gis8 a8 b8 a4 | a4 fis8 gis8 a8 b8 a4 |
+  a4 fis8 gis8 a8 b8 a4 | a4 fis8 gis8 a8 b8 a4 |
+  a4 fis8 gis8 a8 b8 a4 | a4 fis8 gis8 a8 b8 a4~ | a1 |
+
   d'4 cis b a | gis a fis2~ | fis1 |
 }
 
@@ -147,7 +159,6 @@ b_epilogue = \relative c {
       \mark "Second" \g_second \bar "||"
       \mark "Chorus" \g_chorus \bar "||"
       \mark "Third" \g_third \bar "||"
-      \mark "Chorus" \g_chorus \bar "||"
       \mark "Epilogue" \g_epilogue \bar "|."
     }
 
@@ -167,7 +178,6 @@ b_epilogue = \relative c {
         \b_second
         \b_chorus
         \b_third
-        \b_chorus
         \b_epilogue
       %% }
     }
