@@ -24,6 +24,12 @@ b_first = \relative c {
   fis2. fis4 | gis2 fis2 |
 }
 
+d_first = \drummode {
+  \repeat unfold 11 {
+    cymra2 cymra8 cymra8 hho4 |
+  }
+  cymra2 rb2 |
+}
 
 g_chorus = \relative fis {
   cis4 fis gis a | b cis d e |
@@ -52,6 +58,14 @@ b_chorus = \relative c, {
   a1 | b1 | cis1 | d1 |
   e1 | b1 | b,1 | b4 a gis2 | fis1 |
 }
+
+
+d_chorus = \drummode {
+  \repeat unfold 4 { <bd sn>2 <hhp sn>2 | <hhp sn>2 <hhp sn>4. sn8 | }
+  \repeat unfold 4 { <bd sn>2 <bd sn>2 | <bd sn>2 <bd sn>4. sn8 | }
+  r4 \repeat unfold 8 cymra16  r4 |
+}
+
 
 g_second = \relative fis {
   fis4 cis' fis gis | a8( gis) gis2. |
@@ -160,6 +174,12 @@ b_epilogue = \relative c {
       \mark "Chorus" \g_chorus \bar "||"
       \mark "Third" \g_third \bar "||"
       \mark "Epilogue" \g_epilogue \bar "|."
+    }
+
+    {
+      \new DrumStaff \with { instrumentName = #"Drums" }
+      \d_first \bar "||"
+      \d_chorus \bar "||"
     }
 
     {
