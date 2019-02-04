@@ -61,9 +61,9 @@ b_chorus = \relative c, {
 
 
 d_chorus = \drummode {
-  \repeat unfold 4 { <bd sn>2 <hhp sn>2 | <hhp sn>2 <hhp sn>4. sn8 | }
-  \repeat unfold 4 { <bd sn>2 <bd sn>2 | <bd sn>2 <bd sn>4. sn8 | }
-  r4 \repeat unfold 8 cymra16  r4 |
+  \repeat unfold 4 { <hhp bd sn>2 <hhp sn>2 | <hhp sn>2 <hhp sn>4. sn8 | }
+  \repeat unfold 4 { <hhp bd sn>2 <hhp bd sn>2 | <hhp bd sn>2 <hhp bd sn>4. sn8 | }
+  cymra16\< \repeat unfold 6 cymra cymra\! r2 |
 }
 
 
