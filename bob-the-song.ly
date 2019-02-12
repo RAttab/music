@@ -81,7 +81,6 @@ g_second = \relative fis {
   e4\glissando fis4 e2 | fis4\glissando gis2 fis4 | e2 fis2~ | fis1 |
 }
 
-% good luck... :P
 b_second = \relative c {
   fis1 | fis1 |
   fis1 | fis1 |
@@ -108,6 +107,12 @@ d_second = \drummode {
 
   \repeat unfold 2 { <cymra bd>2 cymra | <cymra bd>4 bd cymra2 | }
   \repeat unfold 3 { <cymra bd>2 <cymra bd> | }
+  cymra16\< \repeat unfold 6 cymra cymra\! r4. sn8 |
+}
+
+d_chorus_second = \drummode {
+  <cymc sn bd>4 bd bd2 | sn2 sn4. sn8 |
+  \repeat unfold 7 { <sn bd>4 bd bd2 | sn2 sn4. sn8 | }
   cymra16\< \repeat unfold 6 cymra cymra\! r2 |
 }
 
@@ -186,6 +191,7 @@ b_epilogue = \relative c {
       \d_first \bar "||"
       \d_chorus_first \bar "||"
       \d_second \bar "||"
+      \d_chorus_second \bar "||"
     }
 
     {
