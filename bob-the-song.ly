@@ -25,9 +25,7 @@ b_first = \relative c {
 }
 
 d_first = \drummode {
-  \repeat unfold 11 {
-    <bd cymra>2 cymra8 cymra8 hho4 |
-  }
+  \repeat unfold 11 { <bd cymra>2 cymra8 cymra8 hho4 | }
   cymra2 rb2 |
 }
 
@@ -98,7 +96,7 @@ b_second = \relative c {
 
 d_second = \drummode {
   \repeat unfold 3 { <cymra bd>2 cymra | <cymra bd>4 bd cymra2 | }
-  <cymra bd>2 cymra | <cymra bd>4 bd rb2 |
+  <cymra bd>2 cymra | <cymra bd>4 bd hho2 |
 
   \repeat unfold 3 { <cymra bd>2 cymra | <cymra bd>4 bd cymra2 | }
   <cymra bd>2 cymra | <cymra bd>4 bd hho2 |
