@@ -154,7 +154,7 @@ g_epilogue = \relative fis {
 }
 
 b_epilogue = \relative c {
-  a'4 fis8 gis8 a4 b4 | a4 fis8 gis8 a4 b4 |
+  a4 fis8 gis8 a4 b4 | a4 fis8 gis8 a4 b4 |
   a4 fis8 gis8 a4 b4 | a4 fis8 gis8 a4 b4 |
   a4 fis8 gis8 a8 b8 a4 | a4 fis8 gis8 a8 b8 a4 |
 
