@@ -59,8 +59,7 @@ b_chorus = \relative c, {
   e1 | b1 | b,1 | b4 a gis2 | fis1 |
 }
 
-
-d_chorus = \drummode {
+d_chorus_first = \drummode {
   \repeat unfold 4 { <hhp bd sn>2 <hhp sn>2 | <hhp sn>2 <hhp sn>4. sn8 | }
   \repeat unfold 4 { <hhp bd sn>2 <hhp bd sn>2 | <hhp bd sn>2 <hhp bd sn>4. sn8 | }
   cymra16\< \repeat unfold 6 cymra cymra\! r2 |
@@ -98,6 +97,18 @@ b_second = \relative c {
   fis1 | fis1 |
   fis1 | fis1 |
   fis1 | fis1 | fis1 | fis1 |
+}
+
+d_second = \drummode {
+  \repeat unfold 3 { <cymra bd>2 cymra | <cymra bd>4 bd cymra2 | }
+  <cymra bd>2 cymra | <cymra bd>4 bd rb2 |
+
+  \repeat unfold 3 { <cymra bd>2 cymra | <cymra bd>4 bd cymra2 | }
+  <cymra bd>2 cymra | <cymra bd>4 bd hho2 |
+
+  \repeat unfold 2 { <cymra bd>2 cymra | <cymra bd>4 bd cymra2 | }
+  \repeat unfold 3 { <cymra bd>2 <cymra bd> | }
+  cymra16\< \repeat unfold 6 cymra cymra\! r2 |
 }
 
 
@@ -173,7 +184,8 @@ b_epilogue = \relative c {
     {
       \new DrumStaff \with { instrumentName = #"Drums" }
       \d_first \bar "||"
-      \d_chorus \bar "||"
+      \d_chorus_first \bar "||"
+      \d_second \bar "||"
     }
 
     {
