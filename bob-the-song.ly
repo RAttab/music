@@ -26,7 +26,7 @@ b_first = \relative c {
 
 d_first = \drummode {
   \repeat unfold 11 {
-    cymra2 cymra8 cymra8 hho4 |
+    <bd cymra>2 cymra8 cymra8 hho4 |
   }
   cymra2 rb2 |
 }
@@ -86,12 +86,10 @@ b_second = \relative c {
   fis1 | fis1 |
   fis1 | fis1 |
   fis1 | fis1 |
-  fis1 | fis1 |
 
   fis1 | fis1 |
   fis1 | fis1 |
-  fis1 | fis1 |
-  fis1 | fis1 |
+  fis1 | fis1 | fis1 | fis1 |
 
   fis1 | fis1 |
   fis1 | fis1 |
@@ -188,10 +186,10 @@ b_epilogue = \relative c {
 
     {
       \new DrumStaff \with { instrumentName = #"Drums" }
-      \d_first \bar "||"
-      \d_chorus_first \bar "||"
-      \d_second \bar "||"
-      \d_chorus_second \bar "||"
+      \d_first
+      \d_chorus_first
+      \d_second
+      \d_chorus_second
     }
 
     {
