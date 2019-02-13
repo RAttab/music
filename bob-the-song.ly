@@ -193,16 +193,6 @@ d_epilogue = \drummode {
     }
 
     {
-      \new DrumStaff \with { instrumentName = #"Drums" }
-      \d_first
-      \d_chorus_first
-      \d_second
-      \d_chorus_second
-      \d_third
-      \d_epilogue
-    }
-
-    {
       \new Staff \with {
         instrumentName = #"Bass"
         midiInstrument = #"electric bass (finger)"
@@ -222,7 +212,17 @@ d_epilogue = \drummode {
       %% }
     }
 
-  {
+    {
+      \new DrumStaff \with { instrumentName = #"Drums" }
+      \d_first
+      \d_chorus_first
+      \d_second
+      \d_chorus_second
+      \d_third
+      \d_epilogue
+    }
+
+    {
       \new Staff \with {
         instrumentName = #"Warm Pad"
         midiInstrument = #"pad 2 (warm)"
@@ -241,7 +241,7 @@ d_epilogue = \drummode {
             cis~ | cis | }
         >>
       }
-  }
+    }
 
   >>
 
