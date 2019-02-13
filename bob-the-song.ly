@@ -107,20 +107,18 @@ d_second = \drummode {
 }
 
 d_chorus_second = \drummode {
-  <cymc sn bd>4 bd bd2 | sn2 sn4. sn8 |
+  <cymc bd>4 bd bd2 | sn2 sn4. sn8 |
   \repeat unfold 7 { <sn bd>4 bd bd2 | sn2 sn4. sn8 | }
   cymra16\< \repeat unfold 6 cymra cymra\! r2 |
 }
 
 
 g_third = \relative fis {
-  \time 7/4
-  fis4 cis' fis~ fis1 |
-  fis,4 cis' e~ e1 |
-  fis,4 cis' d~ d1 |
-  fis,4 cis' b~ b1 |
+  fis4 cis' fis2~ | fis1 |
+  fis,4 cis' e2~ | e1 |
+  fis,4 cis' d2~ | d1 |
+  fis,4 cis' b2~ | b1 |
 
-  \time 4/4
   fis4 cis' fis2 |
   fis,4 cis' e2 |
   fis,4 cis' d2 |
@@ -130,12 +128,19 @@ g_third = \relative fis {
 }
 
 b_third = \relative c {
-  \time 7/4
-  fis1.~ fis4 | fis1.~ fis4 | fis1.~ fis4 | fis1.~ fis4 |
+  fis1 | fis |
+  fis | fis |
+  fis | fis |
+  fis | fis |
 
-  \time 4/4
   fis1 | fis1 | fis1 | fis1 |
-  fis1 | fis1 | fis1 | fis1 |
+  r1 | r1 | r1 | r1 |
+}
+
+d_third = \drummode {
+  \repeat unfold 4 { bd1 | hho8 hho hho hho~ hho2 | }
+  \repeat unfold 4 { <sn bd>2 sn | }
+  r1 | r1 | r1 | r2.~ r8 sn8 |
 }
 
 
@@ -163,6 +168,11 @@ b_epilogue = \relative c {
   d'4 cis b a | gis a fis2~ | fis1 |
 }
 
+d_epilogue = \drummode {
+  <cymc bd>4 bd bd2 | sn2 sn4. sn8 |
+  \repeat unfold 5 { <sn bd>4 bd bd2 | sn2 sn4. sn8 | }
+  r1 | r1 | r1 | r1 |
+}
 
 \score {
   <<
@@ -188,6 +198,8 @@ b_epilogue = \relative c {
       \d_chorus_first
       \d_second
       \d_chorus_second
+      \d_third
+      \d_epilogue
     }
 
     {
