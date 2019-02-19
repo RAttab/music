@@ -1,8 +1,7 @@
+SONGS=$(wildcard *.ly)
+OUT=$(subst .ly,.pdf,$(SONGS))
 
-SONGS += bob-the-song.pdf
-SONGS += bob-the-drums.pdf
-
-all: $(SONGS)
+all: $(OUT)
 
 %.pdf: %.ly
 	lilypond $<
